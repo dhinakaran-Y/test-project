@@ -6,6 +6,8 @@ export default defineConfig({
 
   plugins: [tailwindcss()],
 
+  base: "/test-project/",
+
   server: {
     proxy: {
       "/api": {
