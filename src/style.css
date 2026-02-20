@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+#University {
+  width: 200px;       
+  max-width: 250px;   
+}
+#state{
+
+ width: 150px;       
+  max-width: 250px;
+
+}
+
+
+#district{
+
+ width: 150px;       
+  max-width: 250px;
+
+}
+
+#institution{
+
+ width: 150px;       
+  max-width: 250px;
+
+}
+
+
+#institution{
+
+ width: 150px;       
+  max-width: 250px;
+
+}
+
+#programme{
+ width: 150px;       
+  max-width: 250px;
+
+}
