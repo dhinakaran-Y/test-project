@@ -231,3 +231,24 @@ async function getAllCollages(arr) {
   // input search
   searchBtnEl.addEventListener("click", collageSearchByName);
 });
+
+
+
+// search college name api
+  // async function getApiByCollageName(state = "Tamil Nadu", collageQuery = "sona") {
+  //   try {
+  //     const API_KEY = `/api/api/institutions/search?state=${encodeURIComponent(state)}&q=${encodeURIComponent(collageQuery)}`;
+  //     const response = await fetch(API_KEY);
+
+  //     if (!response.ok) {
+  //       throw new Error("Network response was not ok");
+  //     }
+
+  //     const data = await response.json();
+  //     console.log(data);
+
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //   }
+  // }
+  // getApiByCollageName()

@@ -39,3 +39,8 @@
   max-width: 250px;
 
 }
+
+dialog::backdrop{
+  @apply bg-black/40;
+  backdrop-filter: blur(4px);
+}
