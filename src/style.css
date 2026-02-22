@@ -1,46 +1,30 @@
 @import "tailwindcss";
 
 #University {
-  width: 200px;       
-  max-width: 250px;   
-}
-#state{
-
- width: 150px;       
+  width: 125px;
   max-width: 250px;
-
 }
-
-
-#district{
-
- width: 150px;       
+#state {
+  width: 85px;
   max-width: 250px;
-
 }
 
-#institution{
-
- width: 150px;       
-  max-width: 250px;
-
-}
-
-
-#institution{
-
- width: 150px;       
-  max-width: 250px;
-
-}
-
-#programme{
- width: 150px;       
-  max-width: 250px;
-
-}
-
-dialog::backdrop{
+dialog::backdrop {
   @apply bg-black/40;
   backdrop-filter: blur(4px);
+}
+
+#district {
+  width: 110px;
+  max-width: 250px;
+}
+
+#institution {
+  width: 125px;
+  max-width: 250px;
+}
+
+#programme {
+  width: 137px;
+  max-width: 250px;
 }

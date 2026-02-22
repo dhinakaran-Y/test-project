@@ -5,105 +5,114 @@
   <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Indian Colleges List (Datasets)</title>
-  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <title>CyberDude – Indian Colleges Dataset</title>
+  <link rel="shortcut icon" href="./public/fav.png" type="image/x-icon">
 </head>
 
 <body>
 
-  <header class="sticky top-0 z-30">
+  <header class="sticky top-0 z-30 bg-[#0D1B2A] border border-b-white/5  py-0.5">
     <input type="checkbox" id="Toggle" class="hidden peer" />
-    <nav class="flex items-center justify-between p-4 text-dark-200  bg-[rgba(33,34,32,0.2)]">
+    <nav class="flex items-center justify-between p-3 text-dark-200  bg-[rgba(33,34,32,0.2)]">
       <!-- logo -->
-      <div class="font-bold  uppercase sm:ml-20 text">Aicte</div>
-
-      <label for="Toggle" class="cursor-pointer md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
-          <path fill="currentColor" fill-rule="evenodd"
-            d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z"
-            clip-rule="evenodd" />
-        </svg>
-      </label>
-
-
-      <!-- nav link and nav items -->
-      <ul class="hidden gap-6 mr-20 md:flex text-md">
-        <li>
-          <a href="#home" class="text-dark-200 text-md  transition-colors duration-300 hover:text-[#5fe280]">Indian
-            Colleges List </a>
-        </li>
-      </ul>
-
-    </nav>
-    <!-- mobile view -->
-    <div class="flex flex-wrap hidden bg-gray-600 peer-checked:block md:hidden">
-      <ul class="flex flex-col w-full gap-4 p-4 text-center text-md">
-        <li><a href="#home" class="text-gray-200 hover:text-stone-800">Home</a></li>
-        <li><a href="#about" class="text-gray-200 hover:text-stone-800">About</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="w-full pt-10 flex flex-col items-center   min-h-screen bg-slate-800">
-
-
-    <div class="flex justify-center items-center py-3 w-full max-w-7xl ">
-
-      <div class="max-w-6xl w-full  bg-gray-100 p-6 rounded-xl">
-
-        <div class="flex flex-col md:flex-row gap-4">
-
-          <input id="search" class="w-full py-2 px-4 border rounded-lg cursor-wait transition-all duration-500 ease-in-out" type="search"
-            placeholder="Search by collage name" readonly
-            title="Please wait,we are fetching all indian collages data..." />
-
-          <button id="search-btn" class="w-full md:w-auto py-2 px-6 rounded-lg text-white bg-green-600 cursor-pointer">
-            Search
-          </button>
-
-          <select id="state" class="w-full md:w-auto py-2 px-4 border rounded">
-            <option disabled selected>State</option>
-          </select>
-
-          <select id="district" class="w-full md:w-auto py-2 px-4 border rounded">
-            <option disabled selected>District</option>
-          </select>
-
-          <select id="institution" class="w-full md:w-auto py-2 px-4 border rounded">
-            <option disabled selected>Institution type</option>
-            <option value="All">All</option>
-            <option value="Central University">Central University</option>
-            <option value="State Government">State Government</option>
-            <option value="Government">Government</option>
-            <option value="Govt aided">Govt aided</option>
-            <option value="Private-Self Financing">Private-Self Financing</option>
-            <option value="Deemed to be University">Deemed to be University</option>
-          </select>
-
-          <select id="University" class="w-full md:w-auto py-2 px-4 border rounded">
-            <option disabled selected>University Type </option>
-          </select>
-
-          <select id="programme" class="w-full md:w-auto py-2 px-4 border rounded">
-            <option disabled selected>Programme Type </option>
-          </select>
-
-
-        </div>
-
+      <div class="font-bold  uppercase sm:ml-34 text">
+        <img src="./public/cdn-white.svg" class="w-22 h-8" alt="company_log0" srcset="">
       </div>
 
+      <!-- nav link and nav items -->
+      <ul class=" gap-6 mr-5 lg:mr-20 md:flex text-md">
+        <a href="https://indian-colleges-list.vercel.app/" target="_blank"
+          class="hover:bg-[#dee2eb] px-4 py-2 rounded-lg cursor-pointer  bg-gray-100 text-blue-500 font-medium text-xs active:scale-95 transition-all duration-300 ease-in-out ">
+          How It Works</a>
+        <!-- <li class="bg-[#F3F4F6] px-4 py-2 rounded-lg cursor-pointer  hover:bg-gray-100 text-blue-700 font-medium text-xs active:scale-95 transition-all duration-300 ease-in-out ">
+          Indian Colleges (AICTE)
+        </li> -->
+      </ul>
+    </nav>
+  </header>
 
+  <section class="w-full pt-10 flex flex-col items-center   min-h-[85vh] bg-[#07111d] p-5">
+
+    <div class="flex justify-center items-center py-3 w-full max-w-8xl ">
+      <div
+        class="max-w-5xl w-full bg-[background: rgba(255, 255, 255, 0.22);]    bg-white/10 rounded-2xl shadow-lg backdrop-blur-sm border border-white/20  p-5 ">
+        <div class="flex flex-wrap  gap-4">
+          <input id="search"
+            class=" py-2 px-3 w-full md:w-[30%] lg:w-[21%] text-[#E2E8F0]  cursor-wait duration-500 transition-all ease-in-out placeholder:text-[#E2E8F0] ring-1 ring-sky-500  outline-none border-[#2E3A47] border rounded-lg"
+            type="search" placeholder="Enter the college name" readonly
+            title="Please wait,we are fetching all indian collages data... " />
+
+          <button id="search-btn"
+            class="px-4 py-2 bg-sky-500/60   rounded-xl text-white cursor-pointer hover:bg-sky-500/40 transition-all duration-300 ease-in-out ">Search</button>
+
+
+          <select id="state"
+            class="w-full py-2 pl-4 border text-[#E2E8F0] border-[#2E3A47] rounded-lg outline-none ring-1 ring-sky-500 transition">
+            <option class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934] " disabled selected>State</option>
+          </select>
+
+          <select id="district"
+            class="w-full py-2 text-[#E2E8F0] px-4 border   border-[#2E3A47] rounded-lg outline-none ring-1 ring-sky-500 transition">
+            <option class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]  " disabled selected>District</option>
+          </select>
+
+          <select id="institution"
+            class="w-full text-[#E2E8F0] py-2 px-4 border border-[#2E3A47] rounded-lg outline-none ring-1 ring-sky-500 transition">
+            <option class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934] " disabled selected>Institution</option>
+
+            <option value="All" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">All</option>
+            <option value="Central University" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">Central University
+            </option>
+            <option value="State Government" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">State Government
+            </option>
+            <option value="Government" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">Government</option>
+            <option value="Govt aided" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">Govt aided</option>
+            <option value="Private-Self Financing" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">Private-Self
+              Financing</option>
+            <option value="Deemed to be University" class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934]">Deemed to be
+              University</option>
+          </select>
+
+          <select id="University"
+            class="w-full py-2 text-[#E2E8F0] px-4 border border-[#2E3A47] rounded-lg outline-none ring-1 ring-blue-500 transition">
+            <option class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934] " disabled selected>University</option>
+          </select>
+
+          <select id="programme"
+            class="w-full py-2 px-4 border text-[#E2E8F0] border-[#2E3A47] rounded-lg outline-none ring-1 ring-blue-500 transition">
+            <option disabled selected class="text-[#E2E8F0] border-[#2E3A47] bg-[#202934] ">Programme</option>
+
+          </select>
+        </div>
+      </div>
       <!-- parend end div -->
     </div>
 
 
-    <div id="con"
-      class=" flex item flex-col gap-3 flex-wrap md:flex-row  justify-center px-5  max-w-6xl w-full rounded-2xl p-5">
+    <div id="con" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-5 max-w-6xl w-full py-8">
       <!-- collage list -->
+
+      <!-- loading alert -->
+      <div class="col-span-full justify-items-center mt-5 md:mt-20" id="loading-alert">
+        <div role="status" class="justify-items-center">
+          <svg aria-hidden="true" class="w-8 h-8 text-blue-100 animate-spin fill-blue-600" viewBox="0 0 100 101"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="currentColor" />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentFill" />
+          </svg>
+          <p class="text-blue-200 pt-2">All Indian collages data are Loading...</p>
+        </div>
+      </div>
+    </div>
     </div>
 
-    <dialog id="course-info" class="m-auto p-10 relative min-h-50 w-2xl md:w-3xl lg:w-4xl xl:w-5xl rounded-2xl ">
+
+    <dialog id="course-info"
+      class="m-auto bg-blue-50 p-3 md:p-10 relative min-h-50 w-[90vw] md:w-3xl lg:w-4xl xl:w-5xl rounded-2xl ">
       <button type="button" class="absolute top-3 right-4 p-1 outline-none!" id="course-dialog-close-btn">X</button>
       <div class="relative overflow-x-auto shadow border rounded-lg mt-5">
         <table class="w-full text-sm text-left rtl:text-right text-body">
@@ -123,45 +132,105 @@
               </th>
             </tr>
           </thead>
-          <tbody class="*:**:even:bg-gray-100 *:border-b **:px-6 **:py-4 *:*:first:font-semibold whitespace-nowrap" id="course-table">
-            <tr class="">
-              <th scope="row">
-                Apple MacBook Pro 17"
-              </th>
-              <td>
-                Silver
-              </td>
-              <td>
-                Laptop
-              </td>
-              <td>
-                $2999
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Microsoft Surface Pro
-              </th>
-              <td>
-                White
-              </td>
-              <td>
-                Laptop PC
-              </td>
-              <td>
-                $1999
-              </td>
-            </tr>
+          <tbody class="*:**:even:bg-blue-100 *:border-b **:px-6 **:py-4 *:*:first:font-semibold whitespace-nowrap"
+            id="course-table">
+            <!-- content -->
           </tbody>
         </table>
       </div>
-
     </dialog>
-
+  </section>
   </section>
 
 
-  <script type="module" src="./src/main-6.js"></script>
+  <footer class="w-full bg-[#111D28] py-6 md:py-4">
+
+    <div
+      class="max-w-7xl mx-auto px-4 py-1 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+
+      <!-- left side -->
+      <div class="w-full md:w-auto">
+        <h3 class="text-xs text-white/80">© 2026 Copyright
+          <a href="https://cyberdudenetworks.com/" target="_blank"
+            class="inline-block text-sky-500 hover:scale-105 active:scale-95 hover:text-sky-400 transition-all hover:px-2 duration-300 ease-in-out drop-shadow-lg [text-shadow:0_0_30px_rgba(56,189,248,0.3)]">
+            CyberDude Networks Pvt. Ltd.</a>All Rights Reserved.
+        </h3>
+      </div>
+
+      <!-- center side -->
+      <div class="w-full md:w-auto py-1">
+        <h2 class="text-xs text-white/80">Built with
+          <span class="inline-block animate-pulse drop-shadow-[0_0_8px_rgba(56,189,248,0.3)]">💙</span> by the <a
+            href="https://interns.cyberdudenetworks.com/" target="_blank"
+            class="text-sky-500/80 hover:text-sky-400 transition pl-0.5"> CyberDude Internship Team</a>
+        </h2>
+      </div>
+
+      <!-- right side -->
+      <div
+        class="flex  items-center justify-center py-2 md:py-3 lg:py-0 px-5 md:px-8 lg:px-5 gap-4 md:gap-6 lg:gap-8  ">
+
+        <!-- facebook -->
+        <a href="https://www.facebook.com/cdudenetworks" target="_blank" class="cursor-pointer    inline-block ">
+          <svg class="active:scale-120  hover:-translate-y-0.5 text-sky-500/70 transition-all duration-300 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24"><!-- Icon from Unicons by Iconscout - https://github.com/Iconscout/unicons/blob/master/LICENSE -->
+            <path fill="currentColor"
+              d="M15.12 5.32H17V2.14A26 26 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73" />
+          </svg>
+        </a>
+
+
+        <!-- google workplaces -->
+        <a href="https://plus.google.com/+CyberDudeNetworksPvtLtd" target="_blank" class="cursor-pointer">
+          <svg class="active:scale-120  hover:-translate-y-0.5 text-sky-500/70 transition-all duration-300 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+            <path
+              d="M223.5 82.1c11.8 9.6 36.4 29.7 36.4 68 0 37.3-21.5 54.9-43.1 71.5-6.7 6.6-14.4 13.6-14.4 24.7s7.7 17.2 13.3 21.7l18.5 14.1c22.6 18.6 43.1 35.8 43.1 70.6 0 47.4-46.7 95.2-135 95.2-74.4.1-110.3-34.7-110.3-72 0-18.1 9.2-43.8 39.5-61.5 31.8-19.1 75-21.7 98-23.2-7.2-9.1-15.4-18.7-15.4-34.3 0-8.6 2.6-13.6 5.1-19.7-5.6.5-11.3 1-16.4 1-54.4 0-85.2-39.8-85.2-79.1 0-23.2 10.8-48.9 32.9-67.5C119.8 68 154.7 64 182.4 64h105.7l-32.8 18.1h-31.8zM187 305.9c-4.1-.5-6.7-.5-11.8-.5-4.6 0-32.3 1-53.9 8-11.3 4-44.1 16.1-44.1 51.9s35.4 61.5 90.3 61.5c49.3 0 75.4-23.2 75.4-54.4 0-25.7-16.9-39.3-55.9-66.5m14.9-95.8c11.8-11.6 12.8-27.7 12.8-36.8 0-36.3-22.1-92.7-64.7-92.7-13.3 0-27.7 6.5-35.9 16.6-8.7 10.6-11.3 24.2-11.3 37.3 0 33.8 20 89.7 64.2 89.7 12.8.1 26.6-6 34.9-14.1"
+              fill="currentColor" />
+            <path d="M480 142.3h-78.3V64.1H384v78.2h-79.7v17.8H384V241h17.7v-80.9H480z" fill="currentColor" />
+          </svg>
+        </a>
+
+        <!--  linkedin -->
+        <a href="https://www.linkedin.com/company/cyberdude-networks" target="_blank" class="cursor-pointer">
+          <svg class="active:scale-120  hover:-translate-y-0.5 text-sky-500/70 transition-all duration-300 ease-in-out "
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24"><!-- Icon from BoxIcons by Atisa - https://creativecommons.org/licenses/by/4.0/ -->
+            <circle cx="4.983" cy="5.009" r="2.188" fill="currentColor" />
+            <path
+              d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+              fill="currentColor" />
+          </svg>
+        </a>
+
+        <!-- youtube icon -->
+        <a href="https://www.youtube.com/user/CyberDudeNetworks" class="cursor-pointer " target="_blank">
+          <svg class="active:scale-120  hover:-translate-y-0.5 text-sky-500/70 transition-all duration-300 ease-in-out "
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 16 16"><!-- Icon from Qlementine Icons by Olivier Cléro - https://github.com/oclero/qlementine-icons/blob/master/LICENSE -->
+            <path fill="currentColor"
+              d="M6.34 5.45a.13.13 0 0 1 .125 0l4.14 2.4a.125.125 0 0 1 0 .216l-4.14 2.4a.125.125 0 0 1-.188-.108v-4.8c0-.044.024-.086.063-.108" />
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M11.3 2.07c1.2.051 2.38.14 2.9.292c.339.098.648.29.897.556a2.2 2.2 0 0 1 .519.96c.528 2.28.406 5.88.01 8.24a2.2 2.2 0 0 1-.519.96a2 2 0 0 1-.897.556c-1.17.341-5.65.361-6.19.363l-.538-.002a90 90 0 0 1-2.45-.053l-.31-.012l-.296-.013c-1.12-.052-2.2-.14-2.69-.282a2 2 0 0 1-.897-.556a2.2 2.2 0 0 1-.519-.96c-.532-2.27-.386-5.87-.01-8.23c.092-.363.271-.694.519-.96s.558-.458.897-.556c1.09-.317 5.04-.365 6.02-.373l.243-.001l.435.002c.581.005 1.64.019 2.71.062l.171.007zm3.07 1.53c.128.137.226.313.278.514c.482 2.09.381 5.5.003 7.79c-.053.19-.149.357-.272.489a1 1 0 0 1-.444.278h-.002c-.183.054-.589.114-1.19.165c-.57.048-1.24.081-1.9.106c-1.31.047-2.55.052-2.82.053l-.53-.003H7.49a87 87 0 0 1-2.42-.052l-.304-.011l-.293-.013h-.001c-.553-.026-1.08-.06-1.53-.103c-.468-.046-.778-.097-.926-.14h-.003a1 1 0 0 1-.444-.279a1.2 1.2 0 0 1-.279-.516c-.483-2.07-.362-5.48-.002-7.79c.054-.189.15-.355.27-.485a1 1 0 0 1 .444-.278h.002c.168-.05.531-.106 1.07-.155c.516-.047 1.12-.083 1.74-.108a91 91 0 0 1 2.93-.07h.237l.428.002h.001c.577.004 1.62.018 2.67.06l.17.007c.59.025 1.17.06 1.65.105c.51.048.85.102 1.01.148h.001a1 1 0 0 1 .444.279z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <!-- instagram -->
+        <a href="https://www.instagram.com/cdudenetworks" target="_blank" class="cursor-pointer  ">
+          <svg class="active:scale-120  hover:-translate-y-0.5 text-sky-500/70 transition-all duration-300 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M8 0C5.829 0 5.556.01 4.703.048C3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7C.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297c.04.852.174 1.433.372 1.942c.205.526.478.972.923 1.417c.444.445.89.719 1.416.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417c.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046c.78.035 1.204.166 1.486.275c.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485c.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598c-.28.11-.704.24-1.485.276c-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598a2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485c-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486c.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92a.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+        </a>
+        <div>
+        </div>
+  </footer>
+
+  <!-- script -->
+  <script type="module" src="/src/main.js" defer></script>
 </body>
 
 </html>
